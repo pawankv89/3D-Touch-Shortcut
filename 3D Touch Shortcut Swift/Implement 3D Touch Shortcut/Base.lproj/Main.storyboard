@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vZ1-SX-Gvl">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="MZU-bg-mZv">
+            <objects>
+                <navigationController storyboardIdentifier="navigation" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="vZ1-SX-Gvl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5mD-Z5-xyg">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gRO-ko-4ef" kind="relationship" relationship="rootViewController" id="QdI-hA-d4d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uqi-F9-bB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72" y="759"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="FNG-fB-huX">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="gRO-ko-4ef" customClass="SearchViewController" customModule="Implement_3D_Touch_Shortcut" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ii3-Ug-DLR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search ViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deT-6X-aEh">
+                                <rect key="frame" x="50" y="430" width="314" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73333333329999995" green="0.1843137255" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="deT-6X-aEh" firstAttribute="centerX" secondItem="ii3-Ug-DLR" secondAttribute="centerX" id="O9f-zJ-Fbi"/>
+                            <constraint firstItem="deT-6X-aEh" firstAttribute="centerY" secondItem="ii3-Ug-DLR" secondAttribute="centerY" id="iFP-na-wKY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kvd-gN-reB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="p4C-To-CvR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NNJ-qN-W8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="784" y="759"/>
+        </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="13J-bx-sdA">
+            <objects>
+                <viewController storyboardIdentifier="DashboardViewController" id="Kag-6V-c7g" customClass="DashboardViewController" customModule="Implement_3D_Touch_Shortcut" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qh8-ak-Rjb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dashboard ViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sac-ZO-FUf">
+                                <rect key="frame" x="22.5" y="430" width="369" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73526880670000005" green="0.74933890569999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="sac-ZO-FUf" firstAttribute="centerY" secondItem="qh8-ak-Rjb" secondAttribute="centerY" id="44D-zV-8NY"/>
+                            <constraint firstItem="sac-ZO-FUf" firstAttribute="centerX" secondItem="qh8-ak-Rjb" secondAttribute="centerX" id="Ijj-G6-Bmb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="57a-I5-Ckg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7P-4r-66f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1423" y="759"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="APd-JE-lvc">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="A4J-vV-f6Y" customClass="ProfileViewController" customModule="Implement_3D_Touch_Shortcut" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="31O-An-xw8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile ViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ep-Wb-Zon">
+                                <rect key="frame" x="54" y="430" width="306" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.09479183703660965" green="0.60991877317428589" blue="0.099086962640285492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1ep-Wb-Zon" firstAttribute="centerX" secondItem="31O-An-xw8" secondAttribute="centerX" id="Ofs-Ih-XMR"/>
+                            <constraint firstItem="1ep-Wb-Zon" firstAttribute="centerY" secondItem="31O-An-xw8" secondAttribute="centerY" id="Z9Q-dv-D2l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="we1-2y-xl7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QLd-WQ-zCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2049" y="759"/>
+        </scene>
+        <!--Gift View Controller-->
+        <scene sceneID="tQc-eD-PKk">
+            <objects>
+                <viewController storyboardIdentifier="GiftViewController" id="0nI-4j-pE8" customClass="GiftViewController" customModule="Implement_3D_Touch_Shortcut" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gl6-hW-Ish">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gift ViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGy-RK-pOK">
+                                <rect key="frame" x="73.5" y="430" width="267.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30588235289999999" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gGy-RK-pOK" firstAttribute="centerX" secondItem="gl6-hW-Ish" secondAttribute="centerX" id="20V-Df-Yas"/>
+                            <constraint firstItem="gGy-RK-pOK" firstAttribute="centerY" secondItem="gl6-hW-Ish" secondAttribute="centerY" id="S34-hg-b3t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kZV-gH-PE0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0BS-w4-32i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2678" y="759"/>
+        </scene>
+    </scenes>
+</document>
